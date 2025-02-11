@@ -1,6 +1,5 @@
-Documente o projeto listado abaixo:
-
-Uma api feito em dotnet, para listar os dados dos bosses do jogo megaman, que fornece jsons no formato abaixo:
+contexto:
+Este projeto é um projeto de uma api feito em dotnet, para listar os dados dos bosses de megaman, o objetivo principal é ser um backend que fornece jsons no formato abaixo:
 
 ```
 {
@@ -12,7 +11,7 @@ Uma api feito em dotnet, para listar os dados dos bosses do jogo megaman, que fo
 }
 ```
 
-Projeto:
+Especificações do projeto:
 
 ```
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -34,7 +33,8 @@ Projeto:
 </Project>
 ```
 
-Endpoints:
+os endpoints do projeto são:
+namespace Megaman.Controllers
 
 ```
 {
@@ -83,29 +83,27 @@ Endpoints:
 }
 ```
 
-orientações:
+REGRAS:
 
-- Citar as dependências do projeto, no formato de tabela com hiperlinks para sua respectiva página inicial
-- Criar lista de endpoints no formato de tabela
-- Forneça exemplos de uso da API RESTful
-- Criar a estrutura de projeto de acordo com a árvode de diretórios abaixo:
+- Sempre que citar alguma dependência do projeto, deixe ela como hyperlink para a página oficial daquela dependência
+- Organize as dependências em uma sessão em formato de tabela
 
-    .vs
-    .vscode
-    bin/
-    Controllers/
-    Database/
-    middlewares/
-    Models/
-    obj/
-    Properties/
-    Services/
-    appsettings.Development.json
-    appsettings.json  
-    global.json
-    MegamanApi.csproj  
-    MegamanApi.sln
-    Program.cs
-    Startup.cs
+- crie uma estrutura do projeto com base na arvore de pastas abaixo, e crie uma sessão para explicitar as técnicas utilizadas
 
-- Criar sessão explicativa das técnicas utilizadas, incluindo Dependenci Injection e Data Transfer Objects
+.vs
+.vscode
+bin
+Controllers
+Database
+middlewares
+Models
+obj
+Properties
+Services
+appsettings.Development.json
+appsettings.json  
+global.json
+MegamanApi.csproj  
+MegamanApi.sln
+Program.cs
+Startup.cs
